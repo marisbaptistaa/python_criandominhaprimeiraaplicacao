@@ -1,0 +1,43 @@
+print('🅢🅐🅑🅞🅡 🅔🅧🅟🅡🅔🅢🅢\n')  # print = exibir informação no terminal
+
+print('1. Cadastrar restaurante')  # print = exibir informação no terminal
+print('2. Listar restaurante')  # print = exibir informação no terminal
+print('3. Ativar restaurante')  # print = exibir informação no terminal
+print('4. Sair\n')  # print = exibir informação no terminal | \n = pular linha
+
+# consegue passar uma mensagem, como no print | opcao_escolhida = variável
+opcao_escolhida = input('Escolha uma opção: ')
+print('Você escolheu a opção', opcao_escolhida)
+
+# opção difeente de inserir uma variável em uma string = f { variável }
+opcao_escolhida = input('Escolha uma opção: ')
+print(f'Você escolheu a opção {opcao_escolhida}')
+
+# nomenclaturas do Pyhton = snake case, separar cada palavra com _
+# snake_case = para variáveis, funções e métodos
+# PascalCase = para classes
+# SCREAMING_SNAKE_CASE = para constantes
+
+# Python aceita aspas duplas, simples ou triplas ('', "", """"""), mas vamos utilizar as simples por boas práticas. Utiizar sempre simples ou sempre duplas.
+
+# https://fsymbols.com/ = mudar a letra do projeto.
+
+# Atividades
+# 1 - Imprima a frase: Python na Escola de Programação da Alura.
+print('Python na Escola de Programação da Alura')
+
+# 2 - Imprima a frase: Meu nome é {nome} e tenho {idade} anos em que nome e idade precisam ser valores armazenados em variáveis.
+nome = ('Mariana')
+idade = ('28')
+print(f'Meu nome é {nome} e tenho {idade} anos')
+
+# 3 - Imprima a palavra: ‘ALURA’ de modo que cada letra fique em uma linha, como mostrado a seguir:
+print('A')
+print('L')
+print('U')
+print('R')
+print('A')
+
+# 4 - Imprima a frase: O valor arredondado de pi é: {pi_arredondado} em que o valor de pi precisa ser armazenado em uma variável e arredondado para apenas duas casas decimais. Para facilitar, utilize:
+pi = 3.14159
+print('O valor arredondado de pi é:', round(pi, 2)) # round para arredondar 2 casas decimais
