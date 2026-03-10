@@ -1,0 +1,64 @@
+# utilizar bibliotecas = import
+
+import os
+
+
+def exibir_nome_do_programa():
+    print('🅢🅐🅑🅞🅡 🅔🅧🅟🅡🅔🅢🅢\n')  # print = exibir informação no terminal
+
+
+def exibir_opcoes():
+    print('1. Cadastrar restaurante')  # print = exibir informação no terminal
+    print('2. Listar restaurante')  # print = exibir informação no terminal
+    print('3. Ativar restaurante')  # print = exibir informação no terminal
+    print('4. Sair\n')  # print = exibir informação no terminal | \n = pular linha
+
+
+def finalizar_app():
+    os.system('cls')
+    print('Finalizando o app')
+
+
+def escolher_opcao():
+    opcao_escolhida = int(input('Escolha uma opção: ')
+                          )  # convertendo para inteiro
+    print(f'Você escolheu a opção {opcao_escolhida}')
+
+    if opcao_escolhida == 1:  # caso a opção escolhida seja = 1
+        print('Cadastrar restaurante')
+    elif opcao_escolhida == 2:  # caso a opção escolhida for = 2
+        print('Listar restaurantes')
+    elif opcao_escolhida == 3:  # caso a opção escolhida for = 1
+        print('Ativar restaurante')
+    else:
+        finalizar_app()  # utilizando função
+
+
+def main():  # função
+    exibir_nome_do_programa()
+    exibir_opcoes()
+    escolher_opcao()
+
+
+if __name__ == '__main__':
+    main()
+
+# opção difeente de inserir uma variável em uma string = f { variável }
+
+# nomenclaturas do Pyhton = snake case, separar cada palavra com _
+
+# snake_case = para variáveis, funções e métodos
+
+# PascalCase = para classes
+
+# SCREAMING_SNAKE_CASE = para constantes
+
+# Python aceita aspas duplas, simples ou triplas ('', "", """"""), mas vamos utilizar as simples por boas práticas. Utiizar sempre simples ou sempre duplas.
+
+# https://fsymbols.com/ = mudar a letra do projeto.
+
+# def = função | função é um bloco de código que vai realizar uma determinada ação
+
+# if = se | elif = else+if | == = verdadeiro
+
+# python coloca o input para receber uma string | type = tipo
