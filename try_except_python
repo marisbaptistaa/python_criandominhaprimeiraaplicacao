@@ -1,0 +1,77 @@
+# utilizar bibliotecas = import
+
+import os
+
+
+def exibir_nome_do_programa():
+    print('🅢🅐🅑🅞🅡 🅔🅧🅟🅡🅔🅢🅢\n')  # print = exibir informação no terminal
+
+
+def exibir_opcoes():
+    print('1. Cadastrar restaurante')  # print = exibir informação no terminal
+    print('2. Listar restaurante')  # print = exibir informação no terminal
+    print('3. Ativar restaurante')  # print = exibir informação no terminal
+    print('4. Sair\n')  # print = exibir informação no terminal | \n = pular linha
+
+
+def finalizar_app():
+    os.system('cls')
+    print('Finalizando o app')
+
+
+# criando essa função para usuários que não vão inserir opções de 1 a 4.
+def opcao_invalida():
+    print('Opção inválida!\n')
+    input('Digite uma tecla para voltar ao menu principal')
+    main()
+
+
+def escolher_opcao():
+    try:  # tentar rodar essa opção, se não, rodar a função em except. 
+        opcao_escolhida = int(input('Escolha uma opção: ')
+                              )  # convertendo para inteiro
+        print(f'Você escolheu a opção {opcao_escolhida}')
+
+        if opcao_escolhida == 1:  # caso a opção escolhida seja = 1
+            print('Cadastrar restaurante')
+        elif opcao_escolhida == 2:  # caso a opção escolhida for = 2
+            print('Listar restaurantes')
+        elif opcao_escolhida == 3:  # caso a opção escolhida for = 1
+            print('Ativar restaurante')
+        elif opcao_escolhida == 4:  # caso a opção escolhida for = 1
+            finalizar_app()  # utilizando função
+        else:
+            opcao_invalida()  # utilizando função
+    except:
+        opcao_invalida()
+
+
+def main():  # função
+    os.system('cls')
+    exibir_nome_do_programa()
+    exibir_opcoes()
+    escolher_opcao()
+
+
+if __name__ == '__main__':
+    main()
+
+# opção difeente de inserir uma variável em uma string = f { variável }
+
+# nomenclaturas do Pyhton = snake case, separar cada palavra com _
+
+# snake_case = para variáveis, funções e métodos
+
+# PascalCase = para classes
+
+# SCREAMING_SNAKE_CASE = para constantes
+
+# Python aceita aspas duplas, simples ou triplas ('', "", """"""), mas vamos utilizar as simples por boas práticas. Utiizar sempre simples ou sempre duplas.
+
+# https://fsymbols.com/ = mudar a letra do projeto.
+
+# def = função | função é um bloco de código que vai realizar uma determinada ação
+
+# if = se | elif = else+if | == = verdadeiro
+
+# python coloca o input para receber uma string | type = tipo
